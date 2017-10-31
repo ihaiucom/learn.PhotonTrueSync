@@ -1,0 +1,212 @@
+# 0.1.1.0
+- Exposed source code: physics engines and math library
+- New folder structure in "TruSync" folder
+- Fixed serialization bug on replay record (it is not compatible anymore with replays from old versions)
+- Moved classes related to 3d physics to the namespace "TrueSync.Physics3D"
+
+# 0.1.0.9
+- Fixed TSPolygonCollider2D to allow concave shapes
+- Fixed string length limitation (256 bytes) on TrueSyncInput
+- Fixed issue that set position to zero when FreezePosition is marked on TSRigidBody
+- Fixed a bug with replay recording
+- Improved callback's call made by TrueSyncManager
+- Improved performance of FP operations (addition / subtraction / multiplication)
+- Improved StateTracker performance
+- Improvements on memory allocation
+- Added "SetByteArray", "HasByteArray" and "GetByteArray" to TrueSyncInput
+- Added "HingeJoint.Create" to allow creation of simple hinge joints between two 3D bodies
+- Added "TSPhysics2D.Raycast" and "TSPhysics2D.RaycastAll" methods
+- Added "TrueSyncManager.CleanUp" method to clean up internal/static references
+
+# 0.1.0.8
+- Fixed TrueSyncManager.Time value in rollback mode
+- Fixed TSRigidBody.isKinematic when it was set back to false
+- Fixed TSRigibody2D.mass value after a change in "isKinematic"
+- Adjusted drag calculation to behave like Unity's
+- Improvements on memory allocation
+- Added "LookRotation", "Slerp" and "RotateTowards" methods to TSQuaternion
+- Added "TSFriction" and "TSRestitution" to IBody interface
+- Added "ClampMagnitude" to TSVector and TSVector2
+- Added "drag" and "angularDrag" to TSRigibody and TSRigibody2D
+- Added "layerMask" parameter to TSPhysics2D.OverlapXYZ and TSPhysics2D.CastXYZ methods
+- Added "OnSyncedStartLocalPlayer" callback to TrueSyncBehaviour
+- Added "SetBool", "HasBool", "GetBool", "SetTSVector2" and "GetTSVector2" methods to TrueSyncInput
+- Added "GetPlayerInput" to TrueSyncInput to get an InputData from a specific player
+- Added overloaded methods to TrueSyncInput.GetXYZ which is possible to inform a specific owner id
+- Added a "SetTSVector" method in TrueSyncInput that receives a Vector3 and automacally converts it to TSVector
+- Added a warning log when TrueSyncInput.GetXYZ methods are called from a TrueSyncBehaviour that has no player owner
+- Added "AddForceAtPosition" and "GetPointVelocity" to TSRigidBody and TSRigibody2D
+- Added a few properties in TrueSyncBehaviour to fast access of (if exists): TSTransform2D, TSCollider, TSCollider2D, TSRigibody and TSRigibody2D
+- Added TSVector.ToTSVector2() and TSVector2.ToTSVector() methods
+
+# 0.1.0.7
+- Fixed TSPhysics2D.OverlapXYZ methods to correctly remove auxiliar RigidBodies created
+- Fixed TrueSyncManager.Ticks value in rollback mode
+- Fixed TrueSyncConfig error when the layer matrix was opened
+- Fixed messages displayed in KickingHeads demo
+- Added freeze contraints (position and rotation) to TSRigidBody
+- Updated PUN to version 1.80
+- Adjusted TrueSyncManager.SyncedInstantiate to proper remove GameObjects in case of rollbacks
+- Adjusted TrueSync to allow no contact callbacks (Enter/Stay/Exit collision detection)
+- Descreased number of collision iterations in 3D Physics
+
+# 0.1.0.6
+- Added Layer Collision Matrix to TrueSyncConfig asset
+- Added TSPhysics2D including the following methods: CircleCast, CircleCastAll, OverlapCircle, OverlapCircleAll, OverlapPoint, OverlapPointAll, OverlapBox, OverlapBoxAll, OverlapArea, OverlapAreaAll
+- Added an automatic "StateTracker.AddTracking" call for instances of TrueSyncBehaviour
+- Added "LastSafeTick" property to TrueSyncManager
+- Added operator * between TSQuaternion and TSVector
+- Fixed a bug in the property drawer of FP, TSVector and TSVector2
+
+# 0.1.0.5
+- Changed OnSyncedCollisionXYZ and OnSyncedTriggerXYZ parameter from GameObject to TSCOllision/TSCOllision2D
+- Improved output of the trig functions "TSMath.Acos" and "TSMath.Asin"
+- Improved results of "TSVector.Angle", "TSVector2.Angle" and "TSQuaternion.Angle"
+- Fixed a bug in "TSTransform.Rotate"
+- Added a checking to avoid repeated entries in StateTracker.AddTracking
+- Added "tsTransform" public property to TSCollider and TSCollider2D
+- Moved "gravity", "speculativeContacts" and "showStats" from TrueSyncManager to TrueSyncSettings asset
+- Removed "trackedGameObjects" property from TrueSyncManager
+
+# 0.1.0.4
+- Added Asin, Acos, Atan trig methods
+- Added "eulerAngles" property to TSTransform
+- Added "Angle" method to TSVector, TSVector2 and TSQuaternion
+- Added "locked time step" configuration to TrueSyncSettings asset
+- Added "tsCollider" and "tsParent" (reference to a parent TSTransform if it exists) as public properties to TSTransform
+- Fixed a misplacement of game objects instantiated as player prefabs
+- Fixed bug when the fixed timestep was changed in Unity
+- Improved TSMath's API
+
+# 0.1.0.3
+- Added TrueSyncSettings asset for configuration of sync/rollback/panic window
+- Added a Unity's menu option "Assets/Create/TrueSyncConfig" to create a custom configuration
+- Added a config button in Menu scene to override TrueSync's global configuration
+- Added TSPolygonCollider2D which allows generic convex polygon colliders
+- Changes in TSBoxCollider / TSSphereCollider / TSCapsuleCollider now reflect in collision detection system
+- Fixed body's mass change
+- Fixed rotation preset in editor mode for 2D physics
+
+# 0.1.0.2
+- Fixed a uncommon crash when a 2D body was removed in rollback mode
+- Changes in TSCircleCollider2D and TSBoxCollider2D now reflect in collision detection system
+- Improved performance of rollback pipeline
+
+# 0.1.0.1
+- Added 'Gravity' static property to TrueSyncManager
+- Added 'Players' and 'LocalPlayer' static property to TrueSyncManager
+- Added hierarchy constraints to 2D physics
+- Adjusted collider's gizmos when in offline mode
+- Adjusted initialization of TrueSyncBehaviours children of other TrueSyncBehaviour
+- Fixed null pointer in editor mode
+
+# 0.1.0.0 (RC)
+- Updated Photon Engine to version 1.75
+- Added "link.xml" to avoid some iOS/AOT issues
+- Added InterpolationMode to TSRigidBody
+- Added Translate method to TSTransform
+- Added "Speculative Contacts" checkbox that enable a better (and costly) collision detection
+- Added more methods and properties to mimic Unity's API on related components like TSTransform
+- Added a new set of components related to 2D physics simulation (TSTransform2D, TSRigibody2D, TSVector2...)
+- Adjusted "KickingHeads" and "Pong" demo to use the new 2D components
+- Adjusted collision detection to follow Unity's guidline for contacts between colliders, kinematic and non-kinematic bodies
+- Adjusted physics to improve simulation of rigidbodies using restitution
+- Fixed TrueSync to allow syncWindow=0 even for online games 
+- Removed System.File dependencies to avoid webplayer build errors
+- Renamed 'TSRigidBody.Rotation' to 'Rigidbody.rotation'
+- Renamed 'TSRigidBody.LinearVelocity' to 'TSRigidBody.velocity'
+- Removed "Is2D" option from TrueSyncManager
+- Removed "PhysycsWorldManager" component
+
+# 0.0.4.0
+- Added possibility to use TSVector directly in MonoBehaviour scripts
+- Added division by factor to TSVector
+- Added 'TSRandom.insideUnitSphere' to give a random point inside a sphere with radius 1
+- Added 'ClearAll' button to clear all replays saved (menu scene - load replay section)
+- Added 'TrueSyncInput.SetFP/GetFP' and 'TrueSyncInput.SetTSVector/GetTSVector'
+- Added 'TrueSyncInput.HasXYZ' to check if there is a XYZ (int, byte...) value for a provided key
+- Added TSTransform component (mimics Unity's Transform)
+- Added TSMeshCollider and TSTerrainCollider
+- Renamed TSQuaternion methods/fields to follow Unity's Quaternion API
+- Renamed 'OnGameStarted' callback to 'OnSyncedStart'
+- Adjusted kinematic/rigidbody/collider behavior to follow Unity's documentation about collision detection and trigger callback
+
+# 0.0.3.0
+- Improved load of game replays list
+- Improved documentation
+- Improved performance
+- Added 'TrueSyncManager.RemovePlayer' to remove player objects from the scene
+- Added the callback method 'TrueSyncBehavior.OnPlayerDisconnection(playerId)', called when a player gets disconnected
+- Added 'TrueSyncBehavior.OnPreSyncedUpdate', a callback called before 'OnStepUpdate' executes
+- Added 'TrueSyncManager.RegisterIsReadyChecker', it registers a delegate that should return true if the game can proceed
+- Added 'StateTracker.AddTracking(object)' method, it looks for field marked with 'AddTracking' attribute
+- Added number of active/connected players in stats window
+- Added conversion methods in FP: 'AsFloat', 'AsInt', 'AsLong', 'AsDouble' and 'AsDecimal'
+- Added possibility to use FP directly in MonoBehaviour scripts such as a primitive type
+- Removed "offlineMode" from TrueSyncManager, now it automacally starts in offline mode when there is no Photon's room connected
+- Removed 'sendWindow' field from TrueSyncManager (now fixed to 1 - no need for redundant copies)
+- Removed TrueSync dependency of Newtonsoft.Json
+- Replaced 'panicTime' term for 'panicWindow'
+- Replaced 'ownerId (int)' for 'owner (TSPlayerInfo)' in TrueSyncBehavior
+- Replaced 'localOwnerId (int)' for 'localOwner (TSPlayerInfo)' in TrueSyncBehavior
+- Renamed TSVector methods/fields to follow Unity's Vector3 API
+- Updated Photon to version 1.73
+- Fixed TSRandom restore bug (on rollback mode)
+
+# 0.0.2.1
+- Replaced "Randomizer" for TrueSync.TSRandom
+- Adjusted TSRandom to work on rollback mode
+- Improved documentation
+- Setted initial values of TSBoxCollider and TSSphereCollider to pre-existing BoxCollider or SphereCollider configurations
+- Added 'trackedGameObjects' to TrueSyncManager. This property indicates which GameObjects have attached scripts with AddTracking attribute.
+- Added synced start when the game loads. When one player get a ping from all other players the game starts.
+- Fixed bug in SyncedData decoding when TrueSyncInput sets a variable number of inputs
+
+# 0.0.2.0
+- Changed access of a JRigidyBody's RigidBody. Instead of field 'body' now it should be accessed by the property "Body"
+- Added replay panel to load saved replays
+- Replaced JClasses for TSClasses
+- Added more proxy methods in TSRigidBody to access RigidBody properties
+- Adjusted order of OnSyncedTrigger callbacks execution
+- Possiblity to disable a TSCollider, so its gizmos
+- Fixed a visual displacement of TSCollider's gizmos when RigidBody's center is changed
+- Replaced 'OnSyncedTriggerEnd' for 'OnSyncedTriggerExit' to keep consistency
+- Better gizmos on capsule and sphere colliders (showing current rigidbody's orientation)
+- Used transform.lossyScale factor to compute rigidbody's center and shape
+- Removed 'PreStep' and 'PostStep' methods from RigidBody class (not used).
+- Added method 'PostStep' to Constraint base class. This method is called after normal world step execution on every constraint attached to a rigidbody.
+- Added ConstraintHierarchy class. It makes children rigidbody's position to be relative to rigidbody parent.
+- Possiblity to change gravity directly on PhysycsWorldManager component
+- Option to set 2D Physics on. If true all non-static rigidbodies get position/orientation constraints. Additionally an option to freeze z orientation appears on RigidBody component.
+- Automatically add ConstraintHierarchy to RigidBody when needed
+- Added static methods to convert FP from float, to float and to int
+- Added 'disabled' field to a RigidBody. When true it ignores any collision/trigger detected over this body
+- Added 'LayerCollisionMatrix' class to check if specific layers should be ignore when checking collision (using Unity's 2d matrix for now);
+- Added 'Destroy(RigidBody)' method on TrueSyncManager to correctly disable a rigidbody and its gameObject
+- Fixed "Invalid Operation Exception" when a player is banned before the game starts
+- Added 'Ticks', 'DeltaTime' and 'Time' to TrueSyncManager
+- Added wrapper method in TrueSyncManager to Instantiate a prefab and add its RigidBody to the world
+- Possibility to play with 0 syncWindow when offlineMode is true
+- Added 'Distance' method in TSVector to give the distance between two vectors
+- Added a static Randomizer instance with a fixed seed initialization
+- Replaced Jitter.* namespace for TrueSync.*
+- Replace 'AddTourque' method in TSRigidBody for 'AddTorque'
+- Enabled speculativeContacts on RigidBody for better collision detection
+- Disabled Deactivation of RigidBodies from Physics World
+- Added automatic rollback window slide based on network conditions
+- Removed C5 collections library, so il2cpp works fine for iOS.
+
+# 0.0.1.0
+
+- Support for offline mode (it works like a single player mode, no events to send)
+- New callbacks for a TrueSyncBehavior (OnGamePaused and OnGameUnPaused)
+- Renamed "TrueSync" class to "TrueSyncManager"
+- Support for set ownerId of a GameObject placed on the scene
+- Support for OnSyncedTriggerEnter, OnSyncedTriggerStay and OnSyncedTriggerEnd callbacks
+- Support for replay record/play
+- Player disconnection management. A player with bad connection is 'banned' from the game and it keeps going with remaining players.
+- Support for OnGamePaused and OnGameUnpaused callbacks
+- Fixed minor state drift bugs
+
+# 0.0.0.0
+- First truesync version

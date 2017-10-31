@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: a954efe482325ef40b8adf122f171a40
+timeCreated: 1460987807
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kick_0
+    21300002: kick_1
+    21300004: kick_2
+    21300006: kick_3
+    21300008: kick_4
+    21300010: kick_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: kick_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 92
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 72.5}
+        - {x: -46, y: 53.5}
+        - {x: -46, y: -63.5}
+        - {x: -44, y: -72.5}
+        - {x: 46, y: -72.5}
+        - {x: 46, y: 53.5}
+        - {x: 12, y: 72.5}
+    - name: kick_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3
+        width: 92
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 71.5}
+        - {x: -46, y: 46.5}
+        - {x: -46, y: -58.5}
+        - {x: -38, y: -71.5}
+        - {x: 39, y: -71.5}
+        - {x: 46, y: -69.5}
+        - {x: 46, y: 41.5}
+        - {x: 18, y: 71.5}
+    - name: kick_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3
+        width: 94
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 71.5}
+        - {x: -47, y: 58.5}
+        - {x: -47, y: -61.5}
+        - {x: -31, y: -71.5}
+        - {x: 47, y: -71.5}
+        - {x: 47, y: 71.5}
+    - name: kick_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 3
+        width: 95
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 70.5}
+        - {x: -47.5, y: 49.5}
+        - {x: -47.5, y: -22.5}
+        - {x: -30.5, y: -70.5}
+        - {x: 37.5, y: -70.5}
+        - {x: 47.5, y: -65.5}
+        - {x: 47.5, y: 46.5}
+        - {x: 18.5, y: 70.5}
+    - name: kick_4
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 2
+        width: 120
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: -40.5}
+        - {x: -31, y: -68.5}
+        - {x: 18, y: -68.5}
+        - {x: 60, y: -45.5}
+        - {x: 60, y: 68.5}
+        - {x: -11, y: 68.5}
+        - {x: -60, y: 8.5}
+    - name: kick_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1
+        width: 94
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 72}
+        - {x: -47, y: 60}
+        - {x: -47, y: -72}
+        - {x: 24, y: -72}
+        - {x: 47, y: -25}
+        - {x: 47, y: 57}
+        - {x: 21, y: 72}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

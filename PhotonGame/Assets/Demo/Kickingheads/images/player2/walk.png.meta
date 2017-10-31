@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: fc69a1c59d2e9474ea0e5622593f06a6
+timeCreated: 1461087003
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk_0
+    21300002: walk_1
+    21300004: walk_2
+    21300006: walk_3
+    21300008: walk_4
+    21300010: walk_5
+    21300012: walk_6
+    21300014: walk_7
+    21300016: walk_8
+    21300018: walk_9
+    21300020: walk_10
+    21300022: walk_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86.791664, y: -12}
+        - {x: 46.791664, y: -12}
+        - {x: 8.791664, y: -25}
+        - {x: 8.791664, y: -95}
+        - {x: 41.791664, y: -171}
+        - {x: 93.791664, y: -171}
+        - {x: 122.791664, y: -112}
+        - {x: 122.791664, y: -57}
+        - {x: 108.791664, y: -24}
+    - name: walk_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.7916565, y: -25}
+        - {x: 9.7916565, y: -84}
+        - {x: 30.791656, y: -172}
+        - {x: 92.79166, y: -172}
+        - {x: 123.79166, y: -143}
+        - {x: 123.79166, y: -13}
+        - {x: 15.7916565, y: -13}
+    - name: walk_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.79166, y: -158}
+        - {x: 71.79166, y: -160}
+        - {x: 76.79166, y: -168}
+        - {x: 95.79166, y: -167}
+        - {x: 123.79166, y: -102}
+        - {x: 123.79166, y: -61}
+        - {x: 114.79166, y: -26}
+        - {x: 82.79166, y: -13}
+        - {x: 49.791656, y: -13}
+        - {x: 41.791656, y: -17}
+        - {x: 23.791656, y: -32}
+        - {x: 15.7916565, y: -44}
+        - {x: 13.7916565, y: -49}
+        - {x: 10.7916565, y: -55}
+        - {x: 10.7916565, y: -91}
+        - {x: 40.791656, y: -172}
+        - {x: 68.79166, y: -172}
+        - {x: 71.79166, y: -166}
+    - name: walk_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.79166, y: -13}
+        - {x: 35.791656, y: -13}
+        - {x: 11.7916565, y: -44}
+        - {x: 11.7916565, y: -91}
+        - {x: 44.791656, y: -172}
+        - {x: 92.79166, y: -172}
+        - {x: 124.79166, y: -104}
+        - {x: 124.79166, y: -48}
+        - {x: 110.79166, y: -16}
+    - name: walk_4
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.791687, y: -13}
+        - {x: 11.791687, y: -37}
+        - {x: 11.791687, y: -79}
+        - {x: 12.791687, y: -84}
+        - {x: 15.791687, y: -138}
+        - {x: 49.791687, y: -172}
+        - {x: 96.79169, y: -172}
+        - {x: 124.79169, y: -131}
+        - {x: 124.79169, y: -40}
+        - {x: 117.79169, y: -13}
+    - name: walk_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.791687, y: -13}
+        - {x: 12.791687, y: -15}
+        - {x: 12.791687, y: -108}
+        - {x: 42.791687, y: -171}
+        - {x: 90.79169, y: -171}
+        - {x: 125.79169, y: -107}
+        - {x: 125.79169, y: -31}
+        - {x: 118.79169, y: -13}
+    - name: walk_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.791687, y: -13}
+        - {x: 12.791687, y: -161}
+        - {x: 21.791687, y: -170}
+        - {x: 87.79169, y: -170}
+        - {x: 126.79169, y: -142}
+        - {x: 126.79169, y: -46}
+        - {x: 101.79169, y: -13}
+    - name: walk_7
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.791626, y: -12}
+        - {x: 41.791626, y: -12}
+        - {x: 13.791626, y: -41}
+        - {x: 13.791626, y: -117}
+        - {x: 57.791626, y: -172}
+        - {x: 81.791626, y: -172}
+        - {x: 88.791626, y: -164}
+        - {x: 126.791626, y: -97}
+        - {x: 126.791626, y: -61}
+        - {x: 115.791626, y: -21}
+    - name: walk_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68.791626, y: -11}
+        - {x: 59.791626, y: -11}
+        - {x: 42.791626, y: -18}
+        - {x: 31.791626, y: -26}
+        - {x: 19.791626, y: -42}
+        - {x: 14.791626, y: -53}
+        - {x: 14.791626, y: -88}
+        - {x: 37.791626, y: -138}
+        - {x: 56.791626, y: -164}
+        - {x: 59.791626, y: -168}
+        - {x: 82.791626, y: -168}
+        - {x: 95.791626, y: -163}
+        - {x: 127.791626, y: -99}
+        - {x: 127.791626, y: -60}
+        - {x: 111.791626, y: -17}
+    - name: walk_9
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118.791626, y: -40}
+        - {x: 108.791626, y: -23}
+        - {x: 92.791626, y: -12}
+        - {x: 44.791626, y: -12}
+        - {x: 14.791626, y: -33}
+        - {x: 14.791626, y: -105}
+        - {x: 54.791626, y: -169}
+        - {x: 85.791626, y: -169}
+        - {x: 88.791626, y: -167}
+        - {x: 127.791626, y: -93}
+        - {x: 127.791626, y: -64}
+        - {x: 126.791626, y: -61}
+    - name: walk_10
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.791626, y: -12}
+        - {x: 15.791626, y: -36}
+        - {x: 15.791626, y: -114}
+        - {x: 52.791626, y: -173}
+        - {x: 85.791626, y: -173}
+        - {x: 128.79163, y: -96}
+        - {x: 128.79163, y: -32}
+        - {x: 99.791626, y: -12}
+    - name: walk_11
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 0
+        width: 145.58333
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.791626, y: -12}
+        - {x: 50.791626, y: -12}
+        - {x: 15.791626, y: -34}
+        - {x: 15.791626, y: -83}
+        - {x: 31.791626, y: -115}
+        - {x: 34.791626, y: -117}
+        - {x: 37.791626, y: -143}
+        - {x: 48.791626, y: -172}
+        - {x: 97.791626, y: -172}
+        - {x: 129.79163, y: -90}
+        - {x: 129.79163, y: -60}
+        - {x: 109.791626, y: -18}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

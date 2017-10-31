@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 527fb30492092da4391a98e1c0fe9d5a
+timeCreated: 1461086974
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle_0
+    21300002: idle_1
+    21300004: idle_2
+    21300006: idle_3
+    21300008: idle_4
+    21300010: idle_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.833336, y: -11}
+        - {x: 8.833336, y: -41}
+        - {x: 8.833336, y: -103}
+        - {x: 40.833336, y: -168}
+        - {x: 52.833336, y: -173}
+        - {x: 77.833336, y: -173}
+        - {x: 82.833336, y: -170}
+        - {x: 122.833336, y: -92}
+        - {x: 122.833336, y: -31}
+        - {x: 97.833336, y: -11}
+    - name: idle_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100.83334, y: -12}
+        - {x: 19.833344, y: -12}
+        - {x: 10.8333435, y: -33}
+        - {x: 10.8333435, y: -133}
+        - {x: 31.833344, y: -171}
+        - {x: 41.833344, y: -173}
+        - {x: 89.83334, y: -173}
+        - {x: 123.83334, y: -91}
+        - {x: 123.83334, y: -55}
+        - {x: 108.83334, y: -15}
+    - name: idle_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.833344, y: -13}
+        - {x: 10.8333435, y: -19}
+        - {x: 10.8333435, y: -127}
+        - {x: 27.833344, y: -173}
+        - {x: 84.83334, y: -173}
+        - {x: 124.83334, y: -121}
+        - {x: 124.83334, y: -43}
+        - {x: 109.83334, y: -13}
+    - name: idle_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86.83334, y: -12}
+        - {x: 16.833344, y: -12}
+        - {x: 11.8333435, y: -25}
+        - {x: 11.8333435, y: -113}
+        - {x: 35.833344, y: -141}
+        - {x: 45.833344, y: -148}
+        - {x: 39.833344, y: -161}
+        - {x: 54.833344, y: -173}
+        - {x: 91.83334, y: -173}
+        - {x: 124.83334, y: -112}
+        - {x: 124.83334, y: -45}
+        - {x: 116.83334, y: -21}
+    - name: idle_4
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.833313, y: -11}
+        - {x: 12.833313, y: -27}
+        - {x: 12.833313, y: -105}
+        - {x: 26.833313, y: -173}
+        - {x: 98.83331, y: -173}
+        - {x: 125.83331, y: -115}
+        - {x: 125.83331, y: -32}
+        - {x: 95.83331, y: -11}
+    - name: idle_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 0
+        width: 145.66667
+        height: 173
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.833313, y: -11}
+        - {x: 12.833313, y: -26}
+        - {x: 12.833313, y: -109}
+        - {x: 27.833313, y: -172}
+        - {x: 29.833313, y: -173}
+        - {x: 88.83331, y: -173}
+        - {x: 126.83331, y: -116}
+        - {x: 126.83331, y: -40}
+        - {x: 96.83331, y: -11}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
