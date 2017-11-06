@@ -9,6 +9,7 @@ public class TutorialMenu : PunBehaviour
 	void Start ()
     {
         PhotonNetwork.ConnectUsingSettings("v1.0");
+        PhotonNetwork.autoJoinLobby = true;
         PhotonNetwork.automaticallySyncScene = true;
     }
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{25E8BA0B-F90B-4431-9E87-C32EEBEE9DA0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TrueSync</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing.cs" />
+    <Compile Include="ICommunicator.cs" />
+    <Compile Include="IPhysicsManagerBase.cs" />
+    <Compile Include="OnEventReceived.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrueSyncExtensionsCore.cs" />
+    <Compile Include="TrueSync\AbstractLockstep.cs" />
+    <Compile Include="TrueSync\AddTracking.cs" />
+    <Compile Include="TrueSync\ArrayResourcePool.cs" />
+    <Compile Include="TrueSync\ChecksumExtractor.cs" />
+    <Compile Include="TrueSync\CompoundStats.cs" />
+    <Compile Include="TrueSync\CountInfo.cs" />
+    <Compile Include="TrueSync\DefaultLockstep.cs" />
+    <Compile Include="TrueSync\GenericBufferWindow.cs" />
+    <Compile Include="TrueSync\HashList.cs" />
+    <Compile Include="TrueSync\IBody.cs" />
+    <Compile Include="TrueSync\ICollider.cs" />
+    <Compile Include="TrueSync\InputDataBase.cs" />
+    <Compile Include="TrueSync\ITrueSyncBehaviour.cs" />
+    <Compile Include="TrueSync\ITrueSyncBehaviourCallbacks.cs" />
+    <Compile Include="TrueSync\ITrueSyncBehaviourGamePlay.cs" />
+    <Compile Include="TrueSync\IWorld.cs" />
+    <Compile Include="TrueSync\IWorldClone.cs" />
+    <Compile Include="TrueSync\ReplayMode.cs" />
+    <Compile Include="TrueSync\ReplayRecord.cs" />
+    <Compile Include="TrueSync\ReplayRecordSave.cs" />
+    <Compile Include="TrueSync\ResourcePool.cs" />
+    <Compile Include="TrueSync\ResourcePoolItem.cs" />
+    <Compile Include="TrueSync\ResourcePoolListSyncedData.cs" />
+    <Compile Include="TrueSync\ResourcePoolStateTrackerState.cs" />
+    <Compile Include="TrueSync\ResourcePoolSyncedData.cs" />
+    <Compile Include="TrueSync\RollbackLockstep.cs" />
+    <Compile Include="TrueSync\SerializableDictionary.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryByteByte.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryByteByteArray.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryByteInt.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryBytePlayer.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryByteString.cs" />
+    <Compile Include="TrueSync\SerializableDictionaryIntSyncedData.cs" />
+    <Compile Include="TrueSync\StateTracker.cs" />
+    <Compile Include="TrueSync\Stats.cs" />
+    <Compile Include="TrueSync\SyncedData.cs" />
+    <Compile Include="TrueSync\SyncedInfo.cs" />
+    <Compile Include="TrueSync\TrueSyncEventCallback.cs" />
+    <Compile Include="TrueSync\TrueSyncInputCallback.cs" />
+    <Compile Include="TrueSync\TrueSyncInputDataProvider.cs" />
+    <Compile Include="TrueSync\TrueSyncIsReady.cs" />
+    <Compile Include="TrueSync\TrueSyncManagedBehaviour.cs" />
+    <Compile Include="TrueSync\TrueSyncPlayerDisconnectionCallback.cs" />
+    <Compile Include="TrueSync\TrueSyncStats.cs" />
+    <Compile Include="TrueSync\TrueSyncUpdateCallback.cs" />
+    <Compile Include="TrueSync\TSPlayer.cs" />
+    <Compile Include="TrueSync\TSPlayerInfo.cs" />
+    <Compile Include="TrueSync\Utils.cs" />
+    <Compile Include="TrueSync\WorldChecksumExtractor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
