@@ -103,7 +103,7 @@ namespace Tutoral.PUN
             SetState("加入房间失败");
             base.OnPhotonRandomJoinFailed(codeAndMsg);
             SetState("正在创建房间");
-            PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = MaxPlayersPerRoom }, null);
+            PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = MaxPlayersPerRoom, Plugins = new string[] { "ZFCustomPlugin" } }, null);
         }
 
         public override void OnJoinedRoom()

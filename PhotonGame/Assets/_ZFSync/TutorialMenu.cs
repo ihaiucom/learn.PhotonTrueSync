@@ -15,7 +15,8 @@ public class TutorialMenu : PunBehaviour
 
     public override void OnJoinedLobby()
     {
-        PhotonNetwork.JoinOrCreateRoom("room1", null, null);
+        RoomOptions roomOptions = new RoomOptions() {  Plugins = new string[] { "ZFCustomPlugin" } };
+        PhotonNetwork.JoinOrCreateRoom("room1", roomOptions, null);
     }
 
     void OnGUI()
