@@ -90,10 +90,16 @@ public class ReplayUtils {
     **/
     private static DirectoryInfo CheckReplayFolder() {
         string path = null;
+        string root = Application.persistentDataPath;
+#if UNITY_EDITOR
+        root = "Workspaces";
+        if (!Directory.Exists(root))
+            Directory.CreateDirectory(root);
+#endif
         if (replayContext != null && replayContext.Trim().Length > 0) {
-            path = string.Format("{0}/{1}/{2}", Application.persistentDataPath, REPLAY_FOLDER, replayContext);
+            path = string.Format("{0}/{1}/{2}", root, REPLAY_FOLDER, replayContext);
         } else {
-            path = string.Format("{0}/{1}", Application.persistentDataPath, REPLAY_FOLDER);
+            path = string.Format("{0}/{1}", root, REPLAY_FOLDER);
         }
 
         DirectoryInfo folderInfo = new DirectoryInfo(path);

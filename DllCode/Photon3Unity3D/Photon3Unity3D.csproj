@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B911FC00-4479-499A-BD2F-14306D6FA4D6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Photon3Unity3D</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExitGames.Client.Photon.EncryptorManaged\CryptoBase.cs" />
+    <Compile Include="ExitGames.Client.Photon.EncryptorManaged\Decryptor.cs" />
+    <Compile Include="ExitGames.Client.Photon.EncryptorManaged\Encryptor.cs" />
+    <Compile Include="ExitGames.Client.Photon\CmdLogItem.cs" />
+    <Compile Include="ExitGames.Client.Photon\CmdLogReceivedAck.cs" />
+    <Compile Include="ExitGames.Client.Photon\CmdLogReceivedReliable.cs" />
+    <Compile Include="ExitGames.Client.Photon\CmdLogSentReliable.cs" />
+    <Compile Include="ExitGames.Client.Photon\ConnectionProtocol.cs" />
+    <Compile Include="ExitGames.Client.Photon\CustomType.cs" />
+    <Compile Include="ExitGames.Client.Photon\DebugLevel.cs" />
+    <Compile Include="ExitGames.Client.Photon\DeserializeMethod.cs" />
+    <Compile Include="ExitGames.Client.Photon\DeserializeStreamMethod.cs" />
+    <Compile Include="ExitGames.Client.Photon\DictionaryEntryEnumerator.cs" />
+    <Compile Include="ExitGames.Client.Photon\EnetChannel.cs" />
+    <Compile Include="ExitGames.Client.Photon\EnetPeer.cs" />
+    <Compile Include="ExitGames.Client.Photon\EventData.cs" />
+    <Compile Include="ExitGames.Client.Photon\Hashtable.cs" />
+    <Compile Include="ExitGames.Client.Photon\InvocationCache.cs" />
+    <Compile Include="ExitGames.Client.Photon\IPhotonPeerListener.cs" />
+    <Compile Include="ExitGames.Client.Photon\IPhotonSocket.cs" />
+    <Compile Include="ExitGames.Client.Photon\NCommand.cs" />
+    <Compile Include="ExitGames.Client.Photon\NetworkSimulationSet.cs" />
+    <Compile Include="ExitGames.Client.Photon\OperationRequest.cs" />
+    <Compile Include="ExitGames.Client.Photon\OperationResponse.cs" />
+    <Compile Include="ExitGames.Client.Photon\PeerBase.cs" />
+    <Compile Include="ExitGames.Client.Photon\PeerStateValue.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonCodes.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonDisconnectCause.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonPeer.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonPing.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonSocketError.cs" />
+    <Compile Include="ExitGames.Client.Photon\PhotonSocketState.cs" />
+    <Compile Include="ExitGames.Client.Photon\PingMono.cs" />
+    <Compile Include="ExitGames.Client.Photon\PingNativeDynamic.cs" />
+    <Compile Include="ExitGames.Client.Photon\PingNativeStatic.cs" />
+    <Compile Include="ExitGames.Client.Photon\PingWindowsStore.cs" />
+    <Compile Include="ExitGames.Client.Photon\Protocol.cs" />
+    <Compile Include="ExitGames.Client.Photon\Protocol16.cs" />
+    <Compile Include="ExitGames.Client.Photon\SerializeMethod.cs" />
+    <Compile Include="ExitGames.Client.Photon\SerializeStreamMethod.cs" />
+    <Compile Include="ExitGames.Client.Photon\SimulationItem.cs" />
+    <Compile Include="ExitGames.Client.Photon\SocketTcp.cs" />
+    <Compile Include="ExitGames.Client.Photon\SocketUdp.cs" />
+    <Compile Include="ExitGames.Client.Photon\SocketUdpNativeDynamic.cs" />
+    <Compile Include="ExitGames.Client.Photon\SocketUdpNativeStatic.cs" />
+    <Compile Include="ExitGames.Client.Photon\StatusCode.cs" />
+    <Compile Include="ExitGames.Client.Photon\StreamBuffer.cs" />
+    <Compile Include="ExitGames.Client.Photon\SupportClass.cs" />
+    <Compile Include="ExitGames.Client.Photon\TPeer.cs" />
+    <Compile Include="ExitGames.Client.Photon\TrafficStats.cs" />
+    <Compile Include="ExitGames.Client.Photon\TrafficStatsGameLevel.cs" />
+    <Compile Include="ExitGames.Client.Photon\Version.cs" />
+    <Compile Include="ExitGames.Client\IProtocol.cs" />
+    <Compile Include="Photon.SocketServer.Numeric\BigInteger.cs" />
+    <Compile Include="Photon.SocketServer.Security\DiffieHellmanCryptoProvider.cs" />
+    <Compile Include="Photon.SocketServer.Security\ICryptoProvider.cs" />
+    <Compile Include="Photon.SocketServer.Security\OakleyGroups.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

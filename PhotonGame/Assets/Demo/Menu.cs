@@ -64,6 +64,7 @@ public class Menu : PunBehaviour {
 	void Start () {
         instance = this;
         PhotonNetwork.CrcCheckEnabled = true;
+        ReplayRecord.replayMode = ReplayMode.RECORD_REPLAY;
         ReplayUtils.Init();
 
         this.chatScroll = this.chatPanel.transform.Find ("ChatScroll").GetComponent<ScrollRect> ();
@@ -78,7 +79,11 @@ public class Menu : PunBehaviour {
 		ActivePanel (PanelType.Nick);
 	}
 
-	void Update() {
+    private void OnGUI()
+    {
+    }
+
+    void Update() {
 		if (chatPanel.activeSelf && Input.GetKeyDown(KeyCode.Return)) {
 			MultiplayerPanel_ChatSend ();
 		}
@@ -365,7 +370,7 @@ public class Menu : PunBehaviour {
             TrueSyncManager.TrueSyncCustomConfig.panicWindow = panicWindow;
         }
 
-        ReplayRecord.replayMode = ReplayMode.NO_REPLAY;
+        //ReplayRecord.replayMode = ReplayMode.NO_REPLAY;
 
         this.toStart = true;
 
